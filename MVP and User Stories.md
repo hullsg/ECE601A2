@@ -10,4 +10,8 @@ APP MVP
 My App should be able to retrieve tweets based on hashtags surrounding the artists and their performances (i.e. #"artist name", #"tour and tour year", #tickets, #live, etc).  The retrieved tweets should then be analyzed for their general sentiment (positive or negative sentiment) and the output should be the result of this sentiment.   
 Modular Design:
 
-Interface module: App user given option of artists to input.
+Interface module: App user is given ability to choose which artist(s) to recieve information on by assigning the artist to a variable.
+Tweet Retrieval module:  App uses the recent search endpoint to gather recently posted tweets based on the relevant hashtags.
+Sentiment Analysis module:  Google NLP sentiment analysis tool reviews text in retrieved tweets.
+Sentiment Comparison module:  If comparing responses to multiple artists, app compares sentiment scores to determine which of the scores is higher, aka more positive.  Returns result of the comparison as part of string: "The artist with a better reputation is ____________".
+Artist Review module:  If user is only looking for information on one artist, the app takes the sentiment analysis score and associates a negative score (less than zero) with an artist that the user should avoid.  If the score is positive (higher than zero), the app recommends this artist.  
