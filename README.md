@@ -1,3 +1,4 @@
-API User Story
+Repository Description:
 
-As a fan of live music, I want to know what people have thought about concerts from particular artists so I know which ones to buy tickets for when the artist is playing in my area.
+This is my repository for my work in Boston University's EC601 Product Design in Electrical and Computer Engineering course.  It contains a branch dedicated to Project 2 (APIs and APP Development)
+
